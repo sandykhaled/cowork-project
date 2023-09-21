@@ -1,0 +1,223 @@
+body {
+    background-color: white;
+    width: 100%;
+    display: inline;
+}
+
+#screen {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    height: 400px;
+    width: 800px;
+    background-color: #ffffff;
+
+}
+
+#menubar {
+    height: 10%;
+    width: 100%;
+    background-color: #2A373A;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.mac-btn {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-top: 15.5px;
+}
+
+#mac-btn-one {
+    background-color: #EF6525;
+    margin-left: 15.5px;
+}
+
+#mac-btn-two {
+    background-color: #FDD973;
+    margin-left: 31px;
+}
+
+#mac-btn-three {
+    background-color: #94DACD;
+    margin-left: 47px;
+}
+
+#filler {
+    margin-left: 120px;
+}
+
+#profiler {
+    position: absolute;
+    height: 140px;
+    width: 150px;
+    background-color: #E7F5FF;
+    margin-top: 60px;
+    border-radius: 10px;
+    margin-left: -20px;
+}
+#profiler img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#intro {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+.filler-one {
+    height: 50px;
+    width: 200px;
+    background-color: #94DACD;
+    margin-top: 10px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: -20px;
+
+}
+
+#main {
+    position: absolute;
+    margin-top: 195px;
+}
+
+.filler-two {
+    width: 660px;
+    margin-top: 15px;
+    background-color: #94DACD;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: -20px;
+}
+
+.notification {
+    height: 8%;
+    width: 20%;
+    background-color: #EF6525;
+    margin-top: 5%;
+    margin-left: 76%;
+    transform-origin: right;
+    -webkit-animation: notify 3s ease-in-out infinite;
+    animation: notify 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes notify {
+    0% {transform: scaleX(0);}
+    10% {transform: scaleX(1);}
+    13% {transform: scale(1.1);}
+    16% {transform: scale(1);}
+    55% {transform: scaleX(1); border-radius: 0%;}
+    65% {transform: scaleX(0.25); border-radius: 50%;}
+    95% {transform: scaleX(0.25); border-radius: 50%;}
+    100% {transform: scaleX(0);}
+}
+
+@keyframes notify {
+    0% {transform: scaleX(0);}
+    10% {transform: scaleX(1);}
+    13% {transform: scale(1.1);}
+    16% {transform: scale(1);}
+    55% {transform: scaleX(1); border-radius: 0%;}
+    65% {transform: scaleX(0.25); border-radius: 50%;}
+    95% {transform: scaleX(0.25); border-radius: 50%;}
+    100% {transform: scaleX(0);}
+}
+
+.identifier {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 5.5px;
+    margin-left: 7.5px;
+    -webkit-animation: exit 3s ease-in-out infinite;
+    animation: exit 3s ease-in-out infinite;
+}
+
+.text {
+    position: absolute;
+    height: 6px;
+    width: 70px;
+    background-color: #EF6525;
+    margin-top: 12.25px;
+    margin-left: 40px;
+    -webkit-animation: exit 3s ease-in-out infinite;
+    animation: exit 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes exit {
+    0% {opacity: 1;}
+    55% {opacity: 1;}
+    65% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes exit {
+    0% {opacity: 1;}
+    55% {opacity: 1;}
+    65% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.number {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #94DACD;
+    margin-top: -40px;
+    margin-left: 743px;
+    -webkit-animation: enter 3s ease-in-out infinite;
+    animation: enter 3s ease-in-out infinite;
+    padding-top: 15px;
+}
+
+@-webkit-keyframes enter {
+    0% {opacity: 0;}
+    55% {opacity: 0;}
+    65% {opacity: 1; transform: scaleX(1);}
+    95% {opacity: 1; transform: scaleX(1);}
+    100% {opacity: 0; transform: scaleX(1);}
+}
+
+@keyframes enter {
+    0% {opacity: 0;}
+    55% {opacity: 0;}
+    65% {opacity: 1; transform: scaleX(1);}
+    95% {opacity: 1; transform: scaleX(1);}
+    100% {opacity: 0; transform: scaleX(1);}
+}
+
+#credit {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 70px;
+    left: 20px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    /*color: #45B39F;*/
+}
+.no-notifications{
+    background-color: #EF6525;
+    font-size: 20px ;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 20px 100px;
+
+}
